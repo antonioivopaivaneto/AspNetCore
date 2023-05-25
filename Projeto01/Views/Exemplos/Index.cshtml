@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-primary display-2">Exemplos de aplicacao do aspnet core mvc</h1>
+
+<h3>Escolha uma opcão</h3>
+
+<ul>
+    <li> @Html.ActionLink("Action MostrarTexto","MostrarTexto","Exemplos")</li>
+    <li> @Html.ActionLink("Action MostrarPagina","MostrarPagina","Exemplos")</li>
+    <li> @Html.ActionLink("Home -  Index","Index","Home")</li>
+    <li> @Html.ActionLink("Exibir -  PDF","ExibirPdf","Exemplos")</li>
+    <li> @Html.ActionLink("Exibir -  Imagem","ExibirImagem","Exemplos")</li>
+    <li> @Html.ActionLink("Cadastro de Produtos(versao 1)","Cadastro","Exemplos")</li>
+    <li> @Html.ActionLink("Cadastro de Produtos(versao 2)","CadastroModel","Exemplos")</li>
+    <li><a asp-action="CadastroModelTag" asp-asp-controller="Exemplos">Cadastro de Prosutos (Versao 3)</a></li>
+    <li><a asp-action="ListarProdutos" asp-asp-controller="Exemplos">Lista de Produtos</a></li>
+    <li><a asp-action="Cadastro" asp-controller="Contatos">Cadastro de Contato</a></li>
+    <li><a asp-action="ListarContatos" asp-controller="Contatos">Lista de Contato</a></li>
+
+
+</ul>
+

@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>Cadastro de PRodutos (versao 1 - view fracamente tipa) </h1>
+
+
+@using(Html.BeginForm(FormMethod.Get))
+{
+    <div class="margem">
+    <div class="mb-3 form-group">
+        @Html.Label("codigo","Código:", new { @class="form-label"})
+        @Html.TextBox("txtCodigo",null, new { @class="form-control"})
+    </div>
+
+
+    <div class="mb-3 form-group">
+        @Html.Label("descricao","Descrição:", new { @class="form-label"})
+        @Html.TextBox("txtDescricao",null, new { @class="form-control"})
+    </div>
+
+    <div class="mb-3 form-group">
+        @Html.Label("preco","Preço:", new { @class="form-label"})
+        @Html.TextBox("txtPreco",null, new { @class="form-control"})
+    </div>
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+    </div>
+}

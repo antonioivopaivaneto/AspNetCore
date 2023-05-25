@@ -1,0 +1,33 @@
+﻿@model Produto
+@{
+    ViewData["Title"] = "CadastroModelTag";
+}
+
+<h1>Cadastro de Produtos (versao 3 - uso de tag Helpers)</h1>
+
+<form asp-action="CadastroModelTag">
+    <div class="margem">
+
+        <div class="mb-3">
+            <label asp-for="Codigo">Codigo</label>
+            <input asp-for="Codigo" class="form-control" />
+            <span asp-validation-for="Codigo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Descricao">Descricao</label>
+            <input asp-for="Descricao" class="form-control" />
+            <span asp-validation-for="Descricao" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Preco">Preco</label>
+            <input asp-for="Preco" class="form-control" />
+            <span asp-validation-for="Preco" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+    
+</div>
+</form>
+

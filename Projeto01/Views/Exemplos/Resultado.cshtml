@@ -1,0 +1,24 @@
+﻿@model Produto
+
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+    <div class="margem">
+        <h2>Dados do Produto Recebido</h2>
+
+        <p>
+            <span>Cõdigo: @Model.Codigo</span>
+        </p>
+
+        <p>
+            <span>Descricao: @Model.Descricao</span>
+        </p>
+
+        <p>
+            <span>Preco: @Model.Preco.ToString("c")</span>
+        </p>
+
+
+    </div>
+
